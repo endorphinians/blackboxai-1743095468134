@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Chatterpillar Club</title>
+  <meta name="description" content="Get in touch with our team for questions, support, or partnership opportunities">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">We'd love to hear from you! Reach out with questions, feedback, or partnership opportunities.</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Contact Form -->
+        <div class="lg:w-1/2">
+          <h2 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                <option value="general">General Inquiry</option>
+                <option value="support">Customer Support</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="lg:w-1/2">
+          <h2 class="text-2xl font-bold mb-6 text-gray-800">Other Ways to Reach Us</h2>
+          
+          <div class="space-y-6">
+            <!-- Email -->
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                <i class="fas fa-envelope text-indigo-600 text-xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-medium text-gray-800">Email</h3>
+                <p class="text-gray-600">hello@chatterpillar.club</p>
+                <p class="text-sm text-gray-500 mt-1">Typically responds within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                <i class="fas fa-phone text-indigo-600 text-xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-medium text-gray-800">Phone</h3>
+                <p class="text-gray-600">(555) 123-4567</p>
+                <p class="text-sm text-gray-500 mt-1">Monday-Friday, 9am-5pm PST</p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                <i class="fas fa-map-marker-alt text-indigo-600 text-xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-medium text-gray-800">Mailing Address</h3>
+                <p class="text-gray-600">123 Creative Lane<br>San Francisco, CA 94110</p>
+                <p class="text-sm text-gray-500 mt-1">For correspondence only - not a retail location</p>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                <i class="fas fa-hashtag text-indigo-600 text-xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-medium text-gray-800">Social Media</h3>
+                <div class="flex space-x-4 mt-2">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-800">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                  </a>
+                  <a href="#" class="text-indigo-600 hover:text-indigo-800">
+                    <i class="fab fa-instagram text-xl"></i>
+                  </a>
+                  <a href="#" class="text-indigo-600 hover:text-indigo-800">
+                    <i class="fab fa-pinterest-p text-xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Link -->
+          <div class="mt-8 p-6 bg-indigo-50 rounded-lg">
+            <h3 class="text-lg font-medium text-gray-800 mb-2">Have a quick question?</h3>
+            <p class="text-gray-600 mb-4">Check our FAQ section for answers to common questions about our products and services.</p>
+            <a href="/faq" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium">
+              Visit FAQ
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="bg-gray-100 py-0">
+    <div class="container mx-auto px-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.158372978693!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjkiVw!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Load components -->
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
