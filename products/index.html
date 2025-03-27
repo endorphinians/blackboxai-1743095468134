@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Chatterpillar Club</title>
+  <meta name="description" content="Explore our magical coloring collections for kids">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <section class="container mx-auto px-6">
+      <h1 class="text-4xl font-bold text-center mb-4 text-gray-800">Our Magical Collections</h1>
+      <p class="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-600">Each collection contains 50+ unique coloring pages with varying difficulty levels</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Collection 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img class="h-48 w-full md:w-48 object-cover" src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Enchanted Forest">
+            </div>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Ages 4-8</div>
+              <h2 class="mt-2 text-2xl font-semibold text-gray-800">Enchanted Forest</h2>
+              <p class="mt-3 text-gray-600">Explore a magical woodland filled with fairies, unicorns, and other mystical creatures. Perfect for sparking imagination.</p>
+              <div class="mt-4">
+                <a href="enchanted-forest" class="text-indigo-600 hover:text-indigo-800 font-medium">View Collection →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img class="h-48 w-full md:w-48 object-cover" src="https://images.unsplash.com/photo-1635070041053-9d813b5f1a40" alt="Dragon Kingdom">
+            </div>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Ages 6-10</div>
+              <h2 class="mt-2 text-2xl font-semibold text-gray-800">Dragon Kingdom</h2>
+              <p class="mt-3 text-gray-600">Color majestic dragons in their fiery realms. Includes different dragon species and their habitats.</p>
+              <div class="mt-4">
+                <a href="dragon-kingdom" class="text-indigo-600 hover:text-indigo-800 font-medium">View Collection →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img class="h-48 w-full md:w-48 object-cover" src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Undersea World">
+            </div>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Ages 3-7</div>
+              <h2 class="mt-2 text-2xl font-semibold text-gray-800">Undersea World</h2>
+              <p class="mt-3 text-gray-600">Dive into an ocean full of colorful marine life. Features friendly sea creatures and underwater scenes.</p>
+              <div class="mt-4">
+                <a href="undersea-world" class="text-indigo-600 hover:text-indigo-800 font-medium">View Collection →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 4 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img class="h-48 w-full md:w-48 object-cover" src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Celestial Castle">
+            </div>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Ages 5-9</div>
+              <h2 class="mt-2 text-2xl font-semibold text-gray-800">Celestial Castle</h2>
+              <p class="mt-3 text-gray-600">Explore castles floating among the stars. Includes space themes with fantasy elements.</p>
+              <div class="mt-4">
+                <a href="celestial-castle" class="text-indigo-600 hover:text-indigo-800 font-medium">View Collection →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Load components -->
+  <script>
+    // Load header
+    fetch('../../header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    // Load footer
+    fetch('../../footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <!-- Main JS -->
+  <script src="../../js/main.js"></script>
+</body>
+</html>
