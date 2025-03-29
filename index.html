@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chatterpillar Club - Creative Coloring Adventures</title>
   <meta name="description" content="Discover our magical coloring packs that spark creativity and reduce screen time for kids">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-primary-50 dark:bg-primary-900">
   <!-- Header -->
   <div id="header">
     <!-- Content will be loaded from header.html -->
   </div>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
+  <section class="bg-gradient-to-r from-primary-600 to-accent-600 text-white py-20">
     <div class="container mx-auto px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-bold mb-6">Spark Creativity with Magical Coloring Adventures</h1>
       <p class="text-xl mb-8 max-w-2xl mx-auto">Our themed coloring packs help kids explore their imagination while reducing screen time</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/products" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Explore Products</a>
-        <a href="/about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">Learn More</a>
+        <a href="/products" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition duration-300">Explore Products</a>
+        <a href="/about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition duration-300">Learn More</a>
       </div>
     </div>
   </section>
@@ -31,99 +31,429 @@
   <!-- Featured Products -->
   <section class="py-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Magical Collections</h2>
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary-700 dark:text-primary-300">Our Magical Collections</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Product 1 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Enchanted Forest Collection" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 group">
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1626618012641-bfbca5a31239" alt="Enchanted Forest Collection" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-4 right-4 bg-accent-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</span>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Enchanted Forest</h3>
-            <p class="text-gray-600 mb-4">Discover magical creatures in a mystical woodland setting</p>
-            <a href="/products/enchanted-forest" class="text-indigo-600 font-medium hover:text-indigo-800">View Collection →</a>
-          </div>
-        </div>
-        <!-- Product 2 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-          <img src="https://images.unsplash.com/photo-1635070041053-9d813b5f1a40" alt="Dragon Kingdom Collection" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Dragon Kingdom</h3>
-            <p class="text-gray-600 mb-4">Color majestic dragons in their fiery realms</p>
-            <a href="/products/dragon-kingdom" class="text-indigo-600 font-medium hover:text-indigo-800">View Collection →</a>
-          </div>
-        </div>
-        <!-- Product 3 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Undersea World Collection" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Undersea World</h3>
-            <p class="text-gray-600 mb-4">Dive into an ocean full of colorful marine life</p>
-            <a href="/products/undersea-world" class="text-indigo-600 font-medium hover:text-indigo-800">View Collection →</a>
-          </div>
-        </div>
-        <!-- Product 4 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Celestial Castle Collection" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Celestial Castle</h3>
-            <p class="text-gray-600 mb-4">Explore castles floating among the stars</p>
-            <a href="/products/celestial-castle" class="text-indigo-600 font-medium hover:text-indigo-800">View Collection →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonial Preview -->
-  <section class="bg-indigo-50 py-16">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Parents Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <span class="text-gray-600">5.0</span>
-          </div>
-          <p class="text-gray-700 mb-4">"My daughter hasn't asked for the iPad since we got these coloring packs!"</p>
-          <p class="font-medium">- Sarah M.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <span class="text-gray-600">5.0</span>
-          </div>
-          <p class="text-gray-700 mb-4">"The quality is amazing and the themes keep my son engaged for hours."</p>
-          <p class="font-medium">- David T.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
+            <div class="flex items-center mb-2">
+              <h3 class="text-xl font-semibold">Enchanted Forest</h3>
+            <div class="ml-auto flex text-yellow-500 dark:text-yellow-300">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="text-gray-600">4.5</span>
+            </div>
+            <p class="text-secondary-600 dark:text-secondary-300 mb-4">Discover magical creatures in a mystical woodland setting</p>
+            <a href="/products/enchanted-forest" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors duration-300">
+              View Collection <i class="fas fa-arrow-right ml-2"></i>
+            </a>
           </div>
-          <p class="text-gray-700 mb-4">"We use these for our preschool and the kids absolutely love them."</p>
-          <p class="font-medium">- Jessica K.</p>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 group">
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1635070041053-9d813b5f1a40" alt="Dragon Kingdom Collection" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <h3 class="text-xl font-semibold">Dragon Kingdom</h3>
+              <div class="ml-auto flex text-yellow-500 dark:text-yellow-300">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">Color majestic dragons in their fiery realms</p>
+            <a href="/products/dragon-kingdom" class="inline-flex items-center text-primary-500 font-medium hover:text-primary-600 transition-colors duration-300">
+              View Collection <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 group">
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Undersea World Collection" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <h3 class="text-xl font-semibold">Undersea World</h3>
+              <div class="ml-auto flex text-yellow-500 dark:text-yellow-300">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">Dive into an ocean full of colorful marine life</p>
+            <a href="/products/undersea-world" class="inline-flex items-center text-primary-500 font-medium hover:text-primary-600 transition-colors duration-300">
+              View Collection <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 group">
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb" alt="Celestial Castle Collection" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-4 right-4 bg-primary-600 text-white text-xs font-bold px-2 py-1 rounded-full">BESTSELLER</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <h3 class="text-xl font-semibold">Celestial Castle</h3>
+              <div class="ml-auto flex text-yellow-500 dark:text-yellow-300">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">Explore castles floating among the stars</p>
+            <a href="/products/celestial-castle" class="inline-flex items-center text-primary-500 font-medium hover:text-primary-600 transition-colors duration-300">
+              View Collection <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="text-center mt-8">
-        <a href="/testimonials" class="text-indigo-600 font-medium hover:text-indigo-800">Read more testimonials →</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-primary-100 dark:bg-primary-800 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary-600">Rave Reviews from Satisfied Parents</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="flex items-start mb-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah L." class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <p class="text-gray-700 dark:text-gray-300 mb-2 italic">"A wonderful way to reduce my child's screen time and enhance creativity!"</p>
+              <div class="flex items-center">
+                <p class="font-medium">Sarah L.</p>
+                <span class="ml-2 text-xs bg-secondary-100 text-secondary-600 px-2 py-1 rounded-full">Verified Buyer</span>
+              </div>
+              <div class="flex text-yellow-400 text-sm mt-1">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="flex items-start mb-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James M." class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+            <p class="text-gray-700 mb-2 italic">"Simply magical! A must-have for every parent."</p>
+              <div class="flex items-center">
+                <p class="font-medium">James M.</p>
+                <span class="ml-2 text-xs bg-secondary-100 text-secondary-600 px-2 py-1 rounded-full">Verified Buyer</span>
+              </div>
+              <div class="flex text-yellow-400 text-sm mt-1">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="flex items-start mb-4">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma R." class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+            <p class="text-gray-700 mb-2 italic">"Fantastic bonding and educational tool. My kids love it!"</p>
+              <div class="flex items-center">
+                <p class="font-medium">Emma R.</p>
+                <span class="ml-2 text-xs bg-secondary-100 text-secondary-600 px-2 py-1 rounded-full">Verified Buyer</span>
+              </div>
+              <div class="flex text-yellow-400 text-sm mt-1">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="flex items-start mb-4">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Carlos P." class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+            <p class="text-gray-700 mb-2 italic">"A new favorite in our home. Highly recommended!"</p>
+              <div class="flex items-center">
+                <p class="font-medium">Carlos P.</p>
+                <span class="ml-2 text-xs bg-secondary-100 text-secondary-600 px-2 py-1 rounded-full">Verified Buyer</span>
+              </div>
+              <div class="flex text-yellow-400 text-sm mt-1">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+  <!-- Benefits Section -->
+  <section class="py-16 bg-primary-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6 text-center max-w-4xl">
+      <h2 class="text-3xl font-bold mb-8 text-primary-600">The Benefits of Choosing Chatterpillar Club</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">50,000+</div>
+            <p class="text-secondary-600 dark:text-secondary-300">Malaysian families in our community</p>
+        </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <i class="fas fa-users text-4xl text-accent-500 dark:text-accent-400 mb-2"></i>
+            <p class="text-secondary-600 dark:text-secondary-300">Screen-free, educational fun</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <i class="fas fa-brain text-4xl text-accent-500 dark:text-accent-400 mb-2"></i>
+          <p class="text-secondary-600 dark:text-secondary-300">Vital skill development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Color Palette Section -->
+  <section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="container mx-auto px-4 py-12">
+      <div class="flex justify-between items-center mb-12">
+        <h2 class="text-4xl font-bold text-center text-primary-600 dark:text-primary-400">Our Design System</h2>
+        <button id="theme-toggle" class="p-3 rounded-full bg-primary-500 text-white shadow-lg hover:bg-primary-600">
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:inline"></i>
+        </button>
+      </div>
+
+      <!-- Color Palette Display -->
+      <div class="grid gap-8 mb-16">
+        <div>
+          <h2 class="text-2xl font-semibold mb-4 text-primary-700 dark:text-primary-300">Primary Colors</h2>
+          <div class="grid grid-cols-10 gap-2">
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-50 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">primary-50</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-100 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">primary-100</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-200 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">primary-200</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-300 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">primary-300</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-400 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">primary-400</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-500 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">primary-500</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-600 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">primary-600</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-700 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">primary-700</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-800 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">primary-800</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-primary-900 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">primary-900</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-4 text-secondary-700 dark:text-secondary-300">Secondary Colors</h2>
+          <div class="grid grid-cols-10 gap-2">
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-50 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">secondary-50</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-100 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">secondary-100</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-200 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">secondary-200</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-300 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">secondary-300</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-400 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">secondary-400</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-500 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">secondary-500</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-600 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">secondary-600</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-700 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">secondary-700</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-800 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">secondary-800</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-secondary-900 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">secondary-900</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-4 text-accent-700 dark:text-accent-300">Accent Colors</h2>
+          <div class="grid grid-cols-10 gap-2">
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-50 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">accent-50</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-100 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">accent-100</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-200 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">accent-200</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-300 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">accent-300</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-400 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-gray-800">accent-400</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-500 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">accent-500</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-600 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">accent-600</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-700 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">accent-700</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-800 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">accent-800</span>
+            </div>
+            <div class="color-swatch h-20 rounded-lg flex items-end p-2 bg-accent-900 hover:scale-105 hover:shadow-lg transition-all">
+              <span class="text-xs font-mono text-white">accent-900</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Contrast Samples -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-semibold mb-6 text-primary-700 dark:text-primary-300">Text Contrast</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-primary-500 p-6 rounded-lg">
+            <p class="text-white">White on Primary-500</p>
+            <p class="text-primary-100">Primary-100 on Primary-500</p>
+            <p class="text-primary-900">Primary-900 on Primary-500</p>
+          </div>
+          <div class="bg-secondary-500 p-6 rounded-lg">
+            <p class="text-white">White on Secondary-500</p>
+            <p class="text-secondary-100">Secondary-100 on Secondary-500</p>
+            <p class="text-secondary-900">Secondary-900 on Secondary-500</p>
+          </div>
+          <div class="bg-accent-500 p-6 rounded-lg">
+            <p class="text-white">White on Accent-500</p>
+            <p class="text-accent-100">Accent-100 on Accent-500</p>
+            <p class="text-accent-900">Accent-900 on Accent-500</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Component Examples -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-semibold mb-6 text-primary-700 dark:text-primary-300">UI Components</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Buttons -->
+          <div>
+            <h3 class="text-xl font-medium mb-4 text-gray-800 dark:text-gray-200">Buttons</h3>
+            <div class="flex flex-wrap gap-4">
+        <button class="px-6 py-2 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors duration-300">
+          Primary
+        </button>
+        <button class="px-6 py-2 rounded-lg bg-secondary-500 text-white hover:bg-secondary-600 transition-colors duration-300">
+          Secondary
+        </button>
+        <button class="px-6 py-2 rounded-lg bg-accent-500 text-white hover:bg-accent-600 transition-colors duration-300">
+          Accent
+        </button>
+            </div>
+          </div>
+
+          <!-- Cards -->
+          <div>
+            <h3 class="text-xl font-medium mb-4 text-gray-800 dark:text-gray-200">Cards</h3>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
+              <h4 class="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Sample Card</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">This demonstrates card styling with our design system.</p>
+              <button class="px-4 py-1 text-sm bg-primary-500 text-white rounded hover:bg-primary-600">
+                Action
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Check for saved theme preference
+    if (localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+  </script>
+
+  <!-- Final CTA Section -->
+  <section class="bg-gradient-to-r from-primary-500 to-accent-500 text-white py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb')] bg-cover bg-center"></div>
+    </div>
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h2 class="text-4xl font-bold mb-6">Ready to embark on a magical adventure?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Don't miss out on the opportunity to rediscover the magic of coloring with your child.</p>
+      <a href="#" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition duration-300 transform hover:scale-105 inline-flex items-center">
+        Start Your Journey Now <i class="fas fa-arrow-right ml-2"></i>
+      </a>
     </div>
   </section>
 
@@ -146,6 +476,6 @@
   </script>
 
   <!-- Main JS -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
